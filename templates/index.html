@@ -1,0 +1,159 @@
+<header>
+  <link rel="stylesheet" href='/static/main.css' />
+  <nav>
+    <div class="logo">
+      <img src="https://images.unsplash.com/photo-1533794318766-897f4d50cb39?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MDUyMDk&ixlib=rb-1.2.1&q=80">
+    </div>
+    <div class="items">
+      <a href="#Testing" class="active">Test</a>
+      <a href="#Machine learning">Machine Learning</a>
+      <a href="#linear-regression">Model</a>
+
+
+    </div>
+
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="info">
+        <p class="short-info">#Machine learning Project</p>
+        <h2 class="hero-heading">Prediction Model with Flask</h2>
+        <p class="hero-sub-heading">Building a Prediction model with linear regression and web page with flask and deploy with python anywhere.</p>
+        <div class="users">
+
+          <p>Python +Machine Learning + flask + python anywhere</p>
+        </div>
+         <form action="{{url_for('predict')}}" method="post">
+       <input type='text' name='temperature' placeholder='Enter the temperature:'></input>
+       <button type='submit' id="Testing">Predict</button>
+   </form>
+       <h2><br>{{prediction_text}}</h2>
+      </div>
+      <div class="hero-image">
+        <img src="https://s40424.pcdn.co/in/wp-content/uploads/2023/01/What-is-machine-learning-Definition-types.jpg.optimal.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <h3><span class="mq-headline" id="Machine ">Machine Learning</span></h3>
+   <p id="Machine learning"><b>Machine Learning</b> (<b>ML</b>) is an umbrella term for solving problems for which development of algorithms by human programmers would be cost-prohibitive, and instead the problems are solved by helping machines "discover" their "own" algorithms,without needing to be explicitly told what to do by any human-developed algorithms.Recently, generative artificial neural networks have been able to surpass results of many previous approaches.Machine-learning approaches have been applied to large language models, Computer vision, speech recognition, email filtering, agriculture and medicine, where it is too costly to develop algorithms to perform the needed tasks.
+</p>
+  <p>The mathematical foundations of ML are provided by  mathematical optimization (mathematical programming) methods.Data mining is a related (parallel) field of study, focusing on exploratory data analysis through unsupervised learning.
+</p>
+  <p>ML is known in its application across business problems under the name predictive analytics. Although not all machine learning is statistically based, computational statistics is an important source of the field's methods.
+</p>
+  <h3><span class="mw-headline" id="Artificial_intelligence">Artificial intelligence</span></h3>
+<p>As a scientific endeavor, machine learning grew out of the quest for artificial intelligence  (AI). In the early days of AI as an academic discipline, some researchers were interested in having machines learn from data. They attempted to approach the problem with various symbolic methods, as well as what were then termed "neural networks"; these were mostly perceptrons and other models that were later found to be reinventions of the generalized linear models of statistics.Probabilistic reasoning was also employed, especially in automated medical diagnosis.
+</p>
+<p>However, an increasing emphasis on the logical, knowledge-based approach caused a rift between AI and machine learning. Probabilistic systems were plagued by theoretical and practical problems of data acquisition and representation. By 1980, expert systems had come to dominate AI, and statistics was out of favor.Work on symbolic/knowledge-based learning did continue within AI, leading to inductive logic programming, but the more statistical line of research was now outside the field of AI proper, in pattern recognition and information retrieval.Neural networks research had been abandoned by AI and computer science around the same time. This line, too, was continued outside the AI/CS field, as "connectionism", by researchers from other disciplines including Rumelhart, and Hinton. Their main success came in the mid-1980s with the reinvention of backpropagation.
+</p>
+<p>Machine learning (ML), reorganized and recognized as its own field, started to flourish in the 1990s. The field changed its goal from achieving artificial intelligence to tackling solvable problems of a practical nature. It shifted focus away from the symbolic approaches it had inherited from AI, and toward methods and models borrowed from statistics, fuzzy logic, and probability theory.
+
+</p>
+    <h3><span class="mw-headline" id="Classification">Classification of Machine Learning Models:</span></h3>
+ <p>
+Based on different business goals and data sets, there are three learning models for algorithms. Each machine learning algorithm settles into one of the three models:
+</P>
+
+    <li>Supervised Learning</li>
+    <li>Unsupervised Learning</li>
+    <li>Reinforcement Learning</li>
+
+<p>
+    Supervised Learning is further divided into two categories:<br/>
+     <li>Classification</li>
+     <li>Regression</li>
+</p>
+<p>
+    Unsupervised Learning is also divided into below categories:
+    <li>Clustering</li>
+    <li>Association Rule</li>
+    <li>Dimensionality Reduction</li>
+</p>
+ <div>
+ <h3><span class="mw-headline" id="What is Regression?">What is Regression?</span></h3>
+<p>
+
+Regression is defined as a statistical method that helps us to analyze and understand the relationship between two or more variables of interest. The process that is adapted to perform regression analysis helps to understand which factors are important, which factors can be ignored, and how they are influencing each other.
+</p>
+<p>
+In regression, we normally have one dependent variable and one or more independent variables. Here we try to “regress” the value of the dependent variable “Y” with the help of the independent variables. In other words, we are trying to understand, how the value of ‘Y’ changes w.r.t change in ‘X’.
+</p>
+<p>
+For the regression analysis is be a successful method, we understand the following terms:<br/>
+Dependent Variable: This is the variable that we are trying to understand or forecast.<br/>
+Independent Variable: These are factors that influence the analysis or target variable and provide us with information regarding the relationship of the variables with the target variable.
+</p>
+ <h3><strong>Terminologies used in Regression Analysis</strong></h3>
+     <h3 class="wp-block-heading" id="multicollinearity"><strong>Multicollinearity</strong></h3>
+     <p>When the independent variables are highly correlated to each other, then the variables are said to be multicollinear. Many types of regression techniques assume multicollinearity should not be present in the dataset. It is because it causes problems in ranking variables based on its importance, or it makes the job difficult in selecting the most important independent variable.</p>
+    <h3 class="wp-block-heading" id="heteroscedasticity"><strong>Heteroscedasticity</strong></h3>
+     <p>When the variation between the target variable and the independent variable is not constant, it is called heteroscedasticity. Example-As one’s income increases, the variability of food consumption will increase. A poorer person will spend a rather constant amount by always eating inexpensive food; a wealthier person may occasionally buy inexpensive food and at other times, eat expensive meals. Those with higher incomes display a greater variability of food consumption.</p>
+     <h3 class="wp-block-heading" id="underfit-and-overfit"><strong>Underfit and Overfit</strong></h3>
+     <p>When we use unnecessary explanatory variables, it might lead to overfitting. Overfitting means that our algorithm works well on the training set but is unable to perform better on the test sets. It is also known as a problem of <strong>high variance</strong>.<br></p>
+     <p>When our algorithm works so poorly that it is unable to fit even a training set well, then it is said to underfit the data. It is also known as a problem of <strong>high bias</strong>.</p>
+     <h3 class="wp-block-heading" id="types-of-regression"><strong>Types of Regression</strong></h3>
+     <ul>
+<li>Linear Regression</li>
+<li>Polynomial Regression</li>
+<li>Logistic Regression</li>
+</ul>
+ <h3 class="wp-block-heading" id="linear-regression"><strong>Linear Regression</strong></h3>
+     <p>The simplest of all regression types is Linear Regression which tries to establish relationships between Independent and Dependent variables. The Dependent variable considered here is always a continuous variable.</p>
+     <h3 class="wp-block-heading" id="what-is-linear-regression"><strong>What is Linear Regression?</strong></h3>
+     <p>Linear Regression is a predictive model used for finding the <strong><em>linear</em></strong> relationship between a dependent variable and one or more independent variables.</p>
+     <p>Here, ‘Y’ is our dependent variable, which is a continuous numerical and we are trying to understand how ‘Y’ changes with ‘X’.</p>
+     <p>So, if we are supposed to answer, the above question of  “What will be the GRE score of the student, if his CCGPA is 8.32?” our go-to option should be linear regression.<br></p>
+     <h4 class="wp-block-heading" id="examples-of-independent-dependent-variables"><strong>Examples of Independent &amp; Dependent Variables:</strong></h4>
+     <p>• Here x is Rainfall and y is Crop Yield</p>
+     <p>• Secondly, x is Advertising Expense and y is Sales</p>
+     <p>• At last, x is sales of goods and y is GDP</p>
+     <h4 class="wp-block-heading" id="simple-linear-regression"><strong><em>Simple Linear Regression</em></strong></h4>
+     <p><strong><em>X —–&gt; Y</em></strong></p>
+     <p>If the relationship between Independent and dependent variables is multiple in number, then it is called Multiple Linear Regression</p>
+     <h4 class="wp-block-heading" id="multiple-linear-regression">&nbsp;<strong><em>Multiple Linear Regression</em></strong></h4>
+     <figure class="wp-block-image size-large"><img decoding="async" width="417" height="167" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1.png" alt="regression" class="wp-image-20198 entered lazyloaded" data-lazy-srcset="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1.png 417w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1-300x120.png 300w" data-lazy-sizes="(max-width: 417px) 100vw, 417px" data-lazy-src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1.png" data-ll-status="loaded" sizes="(max-width: 417px) 100vw, 417px" srcset="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1.png 417w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1-300x120.png 300w"><noscript><img decoding="async" width="417" height="167" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1.png" alt="regression" class="wp-image-20198" srcset="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1.png 417w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07142713/thisblog1-300x120.png 300w" sizes="(max-width: 417px) 100vw, 417px" /></noscript></figure>
+     <h4 class="wp-block-heading" id="simple-linear-regression-model"><strong><em>Simple Linear Regression Model</em></strong></h4>
+     <p>As the model is used to predict the dependent variable, the relationship between the variables can be written in the below format.</p>
+     <pre class="wp-block-preformatted has-cyan-bluish-gray-background-color has-background">Yi = β0 + β1 Xi +εi
+Where,
+Yi – Dependent variable
+β0 -- Intercept
+β1 – Slope Coefficient
+Xi – Independent Variable
+εi – Random Error Term</pre>
+<p>The main factor that is considered as part of Regression analysis is understanding the variance between the variables. For understanding the variance, we need to understand the measures of variation.</p>
+     <figure class="wp-block-image size-large"><img decoding="async" width="882" height="159" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2.png" alt="regression" class="wp-image-20202 entered lazyloaded" data-lazy-srcset="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2.png 882w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-300x54.png 300w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-768x138.png 768w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-696x125.png 696w" data-lazy-sizes="(max-width: 882px) 100vw, 882px" data-lazy-src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2.png" data-ll-status="loaded" sizes="(max-width: 882px) 100vw, 882px" srcset="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2.png 882w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-300x54.png 300w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-768x138.png 768w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-696x125.png 696w"><noscript><img decoding="async" width="882" height="159" src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2.png" alt="regression" class="wp-image-20202" srcset="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2.png 882w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-300x54.png 300w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-768x138.png 768w, https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/09/07143511/thisblog2-696x125.png 696w" sizes="(max-width: 882px) 100vw, 882px" /></noscript></figure>
+     <pre class="wp-block-preformatted has-cyan-bluish-gray-background-color has-background"><strong>SST = total sum of squares (Total Variation)</strong>
+Measures the variation of the Y i values around their mean Y
+<strong>SSR = regression sum of squares (Explained Variation)</strong>
+Variation attributable to the relationship between X and Y
+<strong>SSE = error sum of squares (Unexplained Variation)</strong>
+Variation in Y attributable to factors other than X</pre>
+<h4 class="wp-block-heading" id="assumptions"><strong><em>Assumptions:</em></strong></h4>
+  <p>Since Linear Regression assesses whether one or more predictor variables explain the dependent variable and hence it has 5 assumptions:</p>
+<ul>
+    <li>Linear Relationship</li>
+     <li>Normality</li>
+    <li>No or Little Multicollinearity</li>
+    <li>No Autocorrelation in errors</li>
+    <li>Homoscedasticity</li>
+</ul>
+<p>With these assumptions considered while building the model, we can build the model and do our predictions for the dependent variable. For any type of machine learning model, we need to understand if the variables considered for the model are correct and have been analysed by a metric. In the case of Regression analysis, the statistical measure that evaluates the model is called the <strong><em>coefficient of determination which is represented as r<sup>2</sup>.</em></strong></p>
+ <p><strong>I am learning machine learing and python </strong></p>
+<h2>Thank you sir for Visiting</h2>
+ </div>
+
+
+
+
+
+
+
+
+
+</section>
+<!-- Hero Section Ends -->
